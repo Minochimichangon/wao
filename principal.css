@@ -1,0 +1,701 @@
+body{
+    margin: 0px;
+    max-width: 1920px;
+    
+}
+
+@import url(https://db.onlinewebfonts.com/c/7a45cffcf1eee0797d566deb425ebaa9?family=Formula1+Display-Regular);
+@import url(https://db.onlinewebfonts.com/c/3745f5043df4f9424d7d094f3411f542?family=Titillium); /*font-family: "Titillium";*/
+@import url(https://db.onlinewebfonts.com/c/4944f4308352f169f622b1f098fa2203?family=Formula1+Display+Wide); /*font-family: "Formula1 Display Wide*/
+@import url(https://db.onlinewebfonts.com/c/f817b827ea06fe3bfe3ee1e8d538686a?family=Formula1+Display-Black); /*font-family: "Formula1 Display-Black";*/
+@import url(https://db.onlinewebfonts.com/c/5fa59df7bc502c63582850f9f34b9db2?family=Formula1+Display-Bold+Bold);
+@import url(https://db.onlinewebfonts.com/c/708ebf9601ecd9690da3380de4596d96?family=Formula1+Display-Italic+Italic);
+
+.secciones{
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+#secciones{
+    background-color: #15151e;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    border-bottom: solid rgb(14, 14, 22) 3px;
+    background-image: url(DRS-D-2x~eefRDGxF.b150f948.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#seccion{
+    font-family: "Formula1 Display-Regular";
+    color: white;
+    font-size: 125%;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: all 0.3s ease;
+}
+
+#seccion:hover{
+    transform: scale(105%);
+    color: rgb(145, 145, 145);
+}
+
+.navegacion{
+    margin-right: 10%;
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+}
+
+#logo{
+    width: 80%;
+    margin-left: 50%;
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(30%);
+}
+
+.bienvenida{
+    margin-top:10%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+}
+
+#bienv{
+    font-weight: lighter;
+    font-family: "Formula1 Display-Regular";
+}
+
+.cuerpodelapagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduccion{
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle,#212130,#15151e);
+    margin-top: 10%;
+    border-color: rgb(14, 14, 22);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 7px rgb(14, 14, 22);
+}
+
+.textintro{
+    font-family: "Formula1 Display-Black";
+    color: white;
+    font-size: 30px;
+}
+
+.intro{
+    font-family: "Formula1 Display-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+    width: 60%;
+    height: 15%;
+    background-color: rgb(14, 14, 22);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
+.imgintro img{
+    width: 400px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.imgintro{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: row;
+}
+
+.intro2{
+    font-family: "Formula1 Display-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+    width: 60%;
+    height: 20%;
+    background-color: rgb(14, 14, 22);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.pilotos{
+    margin-top: 30px;
+    width: 70%;
+    height: 450px;
+    background: radial-gradient(circle,#212130,#15151e);
+    border: solid 7px rgb(14, 14, 22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+}
+
+.titulopiloto{
+    font-family: "Formula1 Display-Black";
+    color: white;
+    font-size: 30px;
+    margin-top: -70px;
+}
+
+.sliderpilotos{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(14, 14, 22);
+    overflow: hidden;
+    
+}
+
+.slider{
+    animation: scroll 70s linear infinite; /* velocidad */
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+
+}
+.driverml{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #863400;
+    border-radius: 15px;
+    background-image: url(mclarendeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+.driverfr{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #710006;
+    border-radius: 15px;
+    background-image: url(ferrarideco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.drivermerc{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #007560;
+    border-radius: 15px;
+    background-image: url(mercedesdeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driverredb{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #003282;
+    border-radius: 15px;
+    background-image: url(redbulldeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driverwill{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #000681;
+    border-radius: 15px;
+    background-image: url(williamsdeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driveraston{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #00482c;
+    border-radius: 15px;
+    background-image: url(astondeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driverkick{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #006300;
+    border-radius: 15px;
+    background-image: url(kickdeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driverracing{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #2345ab;
+    border-radius: 15px;
+    background-image: url(racingdeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driverhaas{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #4d5052;
+    border-radius: 15px;
+    background-image: url(haasdeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driveralpine{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 400px;
+    height: 80%;
+    background-color: #005081;
+    border-radius: 15px;
+    background-image: url(alpinedeco.png);
+    background-size: cover;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.driverml:hover{
+    transform: scale(105%);
+
+}
+
+.driverfr:hover{
+    transform: scale(105%);
+
+}
+
+.driverredb:hover{
+    transform: scale(105%);
+}
+
+.driverwill:hover{
+    transform: scale(105%);
+
+}
+
+.driveraston:hover{
+    transform: scale(105%);
+
+}
+
+.driverkick:hover{
+    transform: scale(105%);
+
+}
+
+.driverhaas:hover{
+    transform: scale(105%);
+
+}
+
+.driverracing:hover{
+    transform: scale(105%);
+
+}
+
+.drivermerc:hover{
+    transform: scale(105%);
+
+}
+
+.driveralpine:hover{
+    transform: scale(105%);
+
+}
+
+#estadisticas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+#nombre{
+    font-family: "Formula1 Display-Regular";
+    font-weight: lighter;
+    margin: 0;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#apellido{
+    font-family: "Formula1 Display-Bold Bold";
+    font-weight: lighter;
+    margin: 0;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -28px;
+}
+
+#equipo{
+    font-family: "Titillium";
+    font-weight: lighter;
+    margin: 0;
+    font-size: 16px;
+    margin-left: 10px;
+        margin-top: -20px;
+}
+
+#carreras{
+    font-family: "Formula1 Display-Regular";
+    font-weight: lighter;
+    margin: 0;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: -28px;
+}
+
+
+#cganadas{
+    font-family: "Formula1 Display-Regular";
+    font-weight: lighter;
+    margin: 0;
+    font-size: 15px;
+    margin-left: 10px;  
+}
+#fotopiloto{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+
+#fotop{
+    width: 100%;
+    margin-bottom: -450px;  
+    
+}
+
+ @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-8400px); } /* mueve justo la mitad para efecto infinito */
+ }
+.calendario{
+    margin-top: 30px;
+    width: 70%;
+    height: 1000px;
+    background: linear-gradient(
+        to right,
+  #15151e 0%,
+  #212130 50%,
+  #212130 50%,
+  #15151e 100%
+    );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: solid 7px rgb(14, 14, 22);
+}
+
+.carruselcal{
+    width: 300px;
+    height: 80%;
+    overflow: hidden;
+    background-color: rgb(14, 14, 22);
+    border-radius: 10px;
+    
+}
+
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide 60s linear infinite;
+}
+
+.imagenes img {
+
+    height: 200px;
+    object-fit: cover;
+    border-bottom: solid 5px #15151e;
+}
+
+@keyframes slide {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4920px); } /* 3 imágenes * 200px */
+}
+
+
+
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 80%;
+}
+
+.textcal{
+    color: white;
+    font-family: "Formula1 Display-Black";
+    font-weight:normal;
+    font-size: 20px;
+    width: 60%;
+    height: 15%;
+    background-color: rgb(14, 14, 22);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#textcal{
+    margin: 0;
+}
+
+.tablacal{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(14, 14, 22);
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    grid-template-rows: repeat(12, 7.8%);
+    justify-content: space-around;
+    row-gap: 0.4923076923076923%;
+    padding-top: 0.4923076923076923%;
+    border-radius: 10px;
+    
+
+}
+
+.r1{
+    background-color: rgb(241, 241, 241);
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.r1:hover{
+    background-color: rgb(192, 192, 192);
+
+}
+
+.ronda{
+    height: 100%;
+    width: 23%;
+    background-color: rgb(230, 0, 0);
+    border-bottom-right-radius: 15px;
+    border-right: 5px solid rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    font-family: "Formula1 Display-Black";
+    color: white;
+    font-size: 11px;
+    
+}
+
+#ronda{
+    margin-top: 14px;
+    
+}
+
+.bandera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 21%;
+}
+
+#bandera{
+    width: 55px;
+    
+}
+
+.circuito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 56%;
+    
+}
+
+#fecha{
+font-size: 12px;
+margin: 0;
+font-family: "Formula1 Display-Italic Italic";
+font-weight: lighter;
+
+margin-bottom: -2px;
+letter-spacing: 1px;
+}
+#pais{
+font-size: 18px;
+margin: 0;
+font-family: "Formula1 Display-Black";
+font-weight: lighter;
+color: rgb(230, 0, 0);
+letter-spacing: 1px;
+
+}
+#circuito{
+
+margin: 0;
+font-family: "Formula1 Display-Bold Bold";
+font-size: 12px;
+margin-top: -4px;
+font-weight: bold;
+
+letter-spacing: 0.5px;
+}
+

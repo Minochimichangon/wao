@@ -1,0 +1,260 @@
+body{
+    margin: 0px;
+    max-width: 1920px;
+    
+}
+
+@import url(https://db.onlinewebfonts.com/c/7a45cffcf1eee0797d566deb425ebaa9?family=Formula1+Display-Regular);
+@import url(https://db.onlinewebfonts.com/c/3745f5043df4f9424d7d094f3411f542?family=Titillium); /*font-family: "Titillium";*/
+@import url(https://db.onlinewebfonts.com/c/4944f4308352f169f622b1f098fa2203?family=Formula1+Display+Wide); /*font-family: "Formula1 Display Wide*/
+@import url(https://db.onlinewebfonts.com/c/f817b827ea06fe3bfe3ee1e8d538686a?family=Formula1+Display-Black); /*font-family: "Formula1 Display-Black";*/
+@import url(https://db.onlinewebfonts.com/c/5fa59df7bc502c63582850f9f34b9db2?family=Formula1+Display-Bold+Bold);
+@import url(https://db.onlinewebfonts.com/c/708ebf9601ecd9690da3380de4596d96?family=Formula1+Display-Italic+Italic);
+
+.secciones{
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+#secciones{
+    background-color: #15151e;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    border-bottom: solid rgb(14, 14, 22) 3px;
+    background-image: url(DRS-D-2x~eefRDGxF.b150f948.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#seccion{
+    font-family: "Formula1 Display-Regular";
+    color: white;
+    font-size: 125%;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.navegacion{
+    margin-right: 10%;
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+}
+
+#logo{
+    width: 80%;
+    margin-left: 50%;
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(fondohistoria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(30%);
+}
+
+.bienvenida{
+    margin-top:10%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+}
+
+#bienv{
+    font-weight: lighter;
+    font-family: "Formula1 Display-Regular";
+}
+
+.cuerpodelapagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro1{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle,#212130,#15151e);
+    margin-top: 10%;
+    border-color: rgb(14, 14, 22);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 7px rgb(14, 14, 22);
+}
+
+.textintro{
+    font-family: "Formula1 Display-Black";
+    color: white;
+    font-size: 30px;
+}
+
+#subtitulos{
+    color: white;
+    font-size: 30px;
+    font-family: "Titillium";
+}
+
+.parrafo1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    
+    width: 80%;
+    height: 200px;
+    background-color: rgb(14, 14, 22);
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
+#textos{
+font-size: 20px;
+color: white;
+font-family: "Formula1 Display-Regular";
+}
+
+.cuadro2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 600px;
+}
+
+.desc1{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(14, 14, 22);
+    font-family: "Formula1 Display-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.foto1{
+    width: 700px;
+    height: 525px;
+    font-family: "Formula1 Display-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-color: rgb(14, 14, 22);
+    border-radius: 15px;
+}
+
+#foto1{
+    border-radius: 10px;
+    width: 600px;
+}
+
+.cuadro3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+ 
+}
+
+.subtitulo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.parrafo2{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(14, 14, 22);
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#parrafo3{
+    width: 90%;
+    height: 350px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parrafo3{
+    width: 50%;
+    height: 350px;
+    background-color: rgb(14, 14, 22);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto3{
+    width: 30%;
+    height: 300px;
+    background-color: rgb(14, 14, 22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#foto3{
+    border-radius: 15px;
+    width: 350px;
+}
